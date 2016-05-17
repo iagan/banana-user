@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * @author fuchujian
@@ -18,6 +19,8 @@ public class User {
     private String email;
     private String sex;
     private String areaCode;
+    private Date createTime;
+    private Integer version;
 
     @Id
     @Column(name = "user_id")

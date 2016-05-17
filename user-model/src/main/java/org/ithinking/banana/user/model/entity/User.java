@@ -13,6 +13,7 @@ import java.util.Date;
 @Entity
 public class User {
     private Long userId;
+    private String customId;
     private String nickName;
     private String passwd;
     private String mobile;
@@ -30,6 +31,15 @@ public class User {
 
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    @Column(name = "custom_id")
+    public String getCustomId() {
+        return customId;
+    }
+
+    public void setCustomId(String customId) {
+        this.customId = customId;
     }
 
     @Column(name = "nick_name")
@@ -84,5 +94,23 @@ public class User {
 
     public void setAreaCode(String areaCode) {
         this.areaCode = areaCode;
+    }
+
+    @Column(name = "create_time")
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    @Column(name = "version")
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }

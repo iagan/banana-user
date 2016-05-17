@@ -11,5 +11,12 @@
 
     <artifactId>user-model</artifactId>
 
+    <dependencies>
+        <!-- persistence-api -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

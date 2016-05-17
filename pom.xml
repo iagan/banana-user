@@ -7,7 +7,10 @@
     <groupId>org.ithinking</groupId>
     <artifactId>banana-user</artifactId>
     <version>1.0-SNAPSHOT</version>
-   
+    <modules>
+        <module>user-model</module>
+    </modules>
+
 
     <packaging>pom</packaging>
 

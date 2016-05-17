@@ -16,6 +16,8 @@ public class User {
     private String passwd;
     private String mobile;
     private String email;
+    private String sex;
+    private String areaCode;
 
     @Id
     @Column(name = "user_id")
@@ -61,5 +63,23 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Column(name = "sex")
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    @Column(name = "area_code")
+    public String getAreaCode() {
+        return areaCode;
+    }
+
+    public void setAreaCode(String areaCode) {
+        this.areaCode = areaCode;
     }
 }

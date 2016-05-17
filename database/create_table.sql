@@ -3,7 +3,7 @@
  */
 CREATE TABLE plat_user(
   user_id          BIGINT(20) NOT NULL COMMENT '内部ID',
-  custom_id        VARCHAR(16) NOT NULL COMMENT '用户自定义ID',
+  login_id         VARCHAR(16) NOT NULL COMMENT '登录ID(用户自定义ID)',
   nick_name        VARCHAR(16) NOT NULL COMMENT '昵称',
   mobile           VARCHAR(16) NULL COMMENT '手机号',
   email            VARCHAR(32) NULL COMMENT '邮箱',

@@ -13,7 +13,7 @@ import java.util.Date;
 @Entity
 public class User {
     private Long userId;
-    private String customId;
+    private String loginId;
     private String nickName;
     private String passwd;
     private String mobile;
@@ -35,13 +35,13 @@ public class User {
         this.userId = userId;
     }
 
-    @Column(name = "custom_id")
-    public String getCustomId() {
-        return customId;
+    @Column(name = "login_id")
+    public String getLoginId() {
+        return loginId;
     }
 
-    public void setCustomId(String customId) {
-        this.customId = customId;
+    public void setLoginId(String loginId) {
+        this.loginId = loginId;
     }
 
     @Column(name = "nick_name")

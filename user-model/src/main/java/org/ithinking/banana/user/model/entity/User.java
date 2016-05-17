@@ -20,6 +20,8 @@ public class User {
     private String email;
     private String sex;
     private String areaCode;
+    // 密码加密salt，应考虑一个全局的globalSalt
+    private Integer salt;
     private Date createTime;
     private Integer version;
 

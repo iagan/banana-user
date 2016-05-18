@@ -12,4 +12,9 @@
          select * from plat_user where login_id = #{0}
     </select>
 
+    <insert id="createUser" parameterType="User">
+        insert into plat_user(user_id,login_id,nick_name,mobile,email,sex,passwd,area_code,create_time)
+        values (#{userId},#{loginId},#{nickName},#{mobile},#{email},#{sex},#{passwd},#{areaCode},#{createTime})
+    </insert>
+
 </mapper>

@@ -22,4 +22,12 @@ public interface UserService {
      */
     public User getUserByLoginId(String loginId);
 
+
+    /**
+     * 创建新用户
+     *
+     * @param user
+     */
+    public void createUser(User user);
+
 }

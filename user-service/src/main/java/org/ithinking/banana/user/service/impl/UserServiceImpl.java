@@ -23,4 +23,9 @@ public class UserServiceImpl implements UserService {
     public User getUserByLoginId(String loginId) {
         return userMapper.getUserByLoginId(loginId);
     }
+
+    @Override
+    public void createUser(User user) {
+        userMapper.createUser(user);
+    }
 }

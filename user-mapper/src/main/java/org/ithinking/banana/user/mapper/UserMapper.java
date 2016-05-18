@@ -23,4 +23,11 @@ public interface UserMapper {
      * @return
      */
     public User getUserByLoginId(String loginId);
+
+    /**
+     * 创建新用户
+     *
+     * @param user
+     */
+    public void createUser(User user);
 }

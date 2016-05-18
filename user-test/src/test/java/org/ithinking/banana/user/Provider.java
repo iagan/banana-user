@@ -1,7 +1,20 @@
 package org.ithinking.banana.user;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
+
 /**
- * Created by test on 2016/5/18.
+ * @author fuchujian
  */
+@SpringBootApplication
+@ComponentScan(basePackages = "org.ithinking.banana")
+@EnableAutoConfiguration
+@ImportResource("classpath:META-INF/spring/dubbo-user-consumer.xml")
 public class Provider {
+    public static void main(String[] args) {
+        SpringApplication.run(Provider.class, args);
+    }
 }

@@ -1,6 +1,7 @@
 package org.ithinking.banana.user.remote;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import org.ithinking.banana.user.Provider;
 import org.ithinking.banana.user.remote.dto.UserDTO;
 import org.ithinking.banana.user.remote.service.UserRemoteService;
 import org.junit.Test;
@@ -12,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author fuchujian
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Application.class)
+@SpringApplicationConfiguration(classes = Provider.class)
 public class UserRemoteServiceTest {
 
     private static Long userId = 1L;

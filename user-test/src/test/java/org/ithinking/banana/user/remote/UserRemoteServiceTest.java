@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author fuchujian
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Provider.class)
+@SpringApplicationConfiguration(classes = org.ithinking.banana.user.remote.Application.class)
 public class UserRemoteServiceTest {
 
     private static Long userId = 1L;

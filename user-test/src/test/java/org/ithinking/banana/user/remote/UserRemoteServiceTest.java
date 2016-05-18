@@ -1,7 +1,6 @@
 package org.ithinking.banana.user.remote;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.ithinking.banana.user.Provider;
 import org.ithinking.banana.user.remote.dto.UserDTO;
 import org.ithinking.banana.user.remote.service.UserRemoteService;
 import org.junit.Test;

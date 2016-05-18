@@ -54,5 +54,7 @@
     <dubbo:protocol name="webservice" port="8892"/>
     -->
 
-
+    <!--
+    <dubbo:reference id="userRemoteService" registry="banana-user" interface="org.ithinking.banana.user.remote.service.UserRemoteService" />
+    -->
 </beans>

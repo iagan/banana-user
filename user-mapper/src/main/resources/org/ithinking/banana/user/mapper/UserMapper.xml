@@ -8,7 +8,7 @@
     </select>
 
 
-    <select id="getUserByLoginId" parameterType="long" resultType="User">
+    <select id="getUserByLoginId" parameterType="string" resultType="User">
          select * from plat_user where login_id = #{0}
     </select>
 

@@ -14,6 +14,12 @@ public interface UserService {
      */
     public User getUserById(Long userId);
 
+    /**
+     * 根据登录ID获取用户信息
+     *
+     * @param loginId
+     * @return
+     */
     public User getUserByLoginId(String loginId);
 
 }

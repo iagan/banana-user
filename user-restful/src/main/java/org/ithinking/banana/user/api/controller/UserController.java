@@ -21,7 +21,7 @@ public class UserController {
     @RequestMapping("user/login")
     public Result login(LoginVO loginVO) {
         Result result = new Result();
-        if (XString.isEmpty(loginVO.getLoginId(), loginVO.getPassword())) {
+        if (XString.hasBlank(loginVO.getLoginId(), loginVO.getPassword())) {
 
         } else {
             User user = userService.getUserByLoginId(loginVO.getLoginId());

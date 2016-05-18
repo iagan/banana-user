@@ -19,7 +19,7 @@ public class XString {
 
 
 
-    public static boolean isBlank(String str, String str2){
+    public static boolean hasBlank(String str, String str2){
         return isBlank(str) || isBlank(str2);
     }
 }

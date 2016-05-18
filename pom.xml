@@ -13,6 +13,7 @@
         <module>user-remote</module>
         <module>user-provider</module>
         <module>user-mapper</module>
+        <module>user-restful</module>
     </modules>
 
 

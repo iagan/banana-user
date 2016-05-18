@@ -11,5 +11,17 @@
 
     <artifactId>user-provider</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.ithinking</groupId>
+            <artifactId>user-remote</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ithinking</groupId>
+            <artifactId>user-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

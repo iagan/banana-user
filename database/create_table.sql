@@ -7,7 +7,7 @@ CREATE TABLE plat_user(
   nick_name        VARCHAR(16) NOT NULL COMMENT '昵称',
   mobile           VARCHAR(16) NULL COMMENT '手机号',
   email            VARCHAR(32) NULL COMMENT '邮箱',
-  sex              CHAR(1)  NULL COMMENT '性别',
+  sex              CHAR(1) NOT NULL DEFAULT '2' COMMENT '性别',
   passwd           CHAR(32) NOT NULL COMMENT '账号密码/支付密码',
   area_code        VARCHAR(16)  NULL COMMENT '地区代码',
   create_time      DATETIME NOT NULL COMMENT '创建时间',

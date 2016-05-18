@@ -1,0 +1,19 @@
+package org.ithinking.banana.user.service;
+
+import org.ithinking.banana.user.model.entity.User;
+
+/**
+ * @author fuchujian
+ */
+public interface UserService {
+
+    /**
+     * 根据内部主键获取用户信息
+     * @param userId
+     * @return
+     */
+    public User getUserById(Long userId);
+
+    public User getUserByLoginId(String loginId);
+
+}

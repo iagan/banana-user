@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user-service</artifactId>
+    <artifactId>user-mapper</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.ithinking</groupId>
-            <artifactId>user-mapper</artifactId>
+            <artifactId>user-model</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>

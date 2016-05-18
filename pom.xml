@@ -12,6 +12,7 @@
         <module>user-service</module>
         <module>user-remote</module>
         <module>user-provider</module>
+        <module>user-mapper</module>
     </modules>
 
 

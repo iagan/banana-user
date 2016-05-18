@@ -15,6 +15,7 @@
         <module>user-mapper</module>
         <module>user-restful</module>
         <module>user-test</module>
+        <module>user-comm</module>
     </modules>
 
 

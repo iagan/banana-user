@@ -18,6 +18,12 @@
             <version>${project.parent.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.ithinking</groupId>
+            <artifactId>user-comm</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
 
         <!-- Spring -->
         <dependency>

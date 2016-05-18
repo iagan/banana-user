@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * @author fuchujian
  */
-@Table(name = "user")
+@Table(name = "plat_user")
 @Entity
 public class User {
     private Long userId;

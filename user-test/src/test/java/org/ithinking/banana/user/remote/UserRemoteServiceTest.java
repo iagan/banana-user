@@ -1,5 +1,6 @@
 package org.ithinking.banana.user.remote;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.ithinking.banana.user.remote.dto.UserDTO;
 import org.ithinking.banana.user.remote.service.UserRemoteService;
 import org.junit.Test;
@@ -19,9 +20,9 @@ public class UserRemoteServiceTest {
     private static Long userId = 1L;
     private static String loginId = "testLoginId";
 
-    //@Reference
+    //@Reference(registry = "banana-user", check = true, interfaceClass = UserRemoteService.class)
     @Autowired
-    private UserRemoteService userRemoteService;
+    protected UserRemoteService userRemoteService;
 
     @Test
     public void testGetUserById(){

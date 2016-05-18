@@ -7,10 +7,12 @@ import org.ithinking.banana.user.remote.dto.UserDTO;
 import org.ithinking.banana.user.remote.service.UserRemoteService;
 import org.ithinking.banana.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @author fuchujian
  */
+@Service
 @com.alibaba.dubbo.config.annotation.Service(interfaceClass = UserRemoteService.class, registry = Constant.DUBBO_REGISTRY)
 public class UserRemoteServiceImpl implements UserRemoteService {
 

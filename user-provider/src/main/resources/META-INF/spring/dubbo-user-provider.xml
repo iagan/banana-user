@@ -13,7 +13,7 @@
     <!--<dubbo:monitor protocol="registry"/>-->
 
     <!-- here we demonstrate both annotation-based and xml-based configs -->
-    <dubbo:annotation package="org.ithinking.banana.user.service.remote.impl" />
+    <dubbo:annotation package="org.ithinking.banana.user.remote.service.impl" />
 
     <dubbo:protocol name="dubbo" serialization="kryo" />
     <!--

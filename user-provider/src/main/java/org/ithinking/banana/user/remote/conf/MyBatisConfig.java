@@ -34,7 +34,7 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
     public SqlSessionFactory sqlSessionFactoryBean() {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setTypeAliasesPackage("org.ithinking.banana.pay.model");
+        bean.setTypeAliasesPackage("org.ithinking.banana.user.model");
 
         // SqlSessionFactory 配置
         org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
@@ -56,7 +56,7 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
         //添加XML目录
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         try {
-            bean.setMapperLocations(resolver.getResources("classpath*:org/ithinking/banana/pay/mapper/*.xml"));
+            bean.setMapperLocations(resolver.getResources("classpath*:org/ithinking/banana/user/mapper/*.xml"));
             return bean.getObject();
         } catch (Exception e) {
             e.printStackTrace();

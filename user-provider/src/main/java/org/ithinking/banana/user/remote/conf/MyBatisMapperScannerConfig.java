@@ -21,7 +21,7 @@ public class MyBatisMapperScannerConfig {
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-        mapperScannerConfigurer.setBasePackage("org.ithinking.banana.pay.mapper");
+        mapperScannerConfigurer.setBasePackage("org.ithinking.banana.user.mapper");
         //Properties properties = new Properties();
         //properties.setProperty("mappers", "tk.mybatis.springboot.util.MyMapper");
         //properties.setProperty("notEmpty", "false");

@@ -5,11 +5,21 @@ package org.ithinking.banana.comm;
  */
 public class XString {
 
-    public static boolean isEmpty(String str){
-        return str == null || str.trim().isEmpty();
+    public static boolean isBlank(String src) {
+        if (src != null) {
+            int i = 0, len = src.length();
+            while (i < len) {
+                if (src.charAt(i++) > ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
-    public static boolean isEmpty(String str, String str2){
-        return isEmpty(str) || isEmpty(str2);
+
+
+    public static boolean isBlank(String str, String str2){
+        return isBlank(str) || isBlank(str2);
     }
 }
